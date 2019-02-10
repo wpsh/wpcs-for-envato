@@ -2,6 +2,7 @@
   "name": "wpsh/wpcs-for-envato",
   "description": "WordPress coding standards for Envato plugins and themes",
   "type": "phpcodesniffer-standard",
+  "license": "MIT",
   "authors": [{
     "name": "Kaspars Dambis",
     "email": "hi@kaspars.net"
