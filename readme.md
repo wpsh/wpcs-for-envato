@@ -10,24 +10,24 @@ Automatically check for Envato [WordPress plugin](https://help.author.envato.com
 
 ## Setup
 
-Add these coding stanandards as a [Composer development dependency](https://packagist.org/packages/wpsh/wpcs-for-envato) to your project:
+1. Add these coding stanandards as a [Composer development dependency](https://packagist.org/packages/wpsh/wpcs-for-envato) to your project:
 
-```bash
-composer require --dev wpsh/wpcs-for-envato
-```
+	```bash
+	composer require --dev wpsh/wpcs-for-envato
+	```
 
-Define a script in `composer.json` to run the checks:
+2. Define a script in `composer.json` to run the checks:
 
-```json
-{
-	"scripts": {
-		"cs": "vendor/bin/phpcs --standard=WPCSForEnvato --extensions=php",
-		"csfix": "vendor/bin/phpcbf --standard=WPCSForEnvato --extensions=php"
+	```json
+	{
+		"scripts": {
+			"cs": "vendor/bin/phpcs --standard=WPCSForEnvato --extensions=php",
+			"csfix": "vendor/bin/phpcbf --standard=WPCSForEnvato --extensions=php"
+		}
 	}
-}
-```
+	```
 
-Use `composer cs` to run the coding standard checks and `composer csfix` to automatically fix some of the coding standard violations.
+	Use `composer cs` to run the coding standard checks and `composer csfix` to automatically fix some of the coding standard violations.
 
 
 ## Configuration
