@@ -7,9 +7,6 @@
 	<arg name="tab-width" value="4"/>
 	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
 
-	<!-- WordPress theme files and directories must be named using lowercase letters. Words must be separated by hyphens, not camelCase or underscores. -->
-	<rule ref="WordPress.Files.FileName"/>
-
 	<!-- Don't end files with closing PHP tags. -->
 	<rule ref="PSR2.Files.ClosingTag"/>
 
@@ -17,18 +14,25 @@
 	<rule ref="Generic.PHP.DisallowShortOpenTag"/>
 	<rule ref="Generic.PHP.DisallowAlternativePHPTags"/>
 
+	<!-- WordPress theme files and directories must be named using lowercase letters. Words must be separated by hyphens, not camelCase or underscores. -->
+	<rule ref="WordPress.Files.FileName"/>
+
+	<!-- Validate, sanitize, and escape everything. -->
+	<rule ref="WordPress.Security"/>
+	<rule ref="WordPress.WP"/>
+
+	<!-- Direct database access is prohibited. Instead, make use of the WordPress Database API.. -->
+	<rule ref="WordPress.DB"/>
+
+	<!-- All theme text strings must be internationalized and properly escaped so that the theme can be translated and localized without parent theme modifications. -->
+	<rule ref="WordPress.WP.I18n"/>
+
 	<!-- Single-statement inline control structures are prohibited. Either curly braces should be used (even where they are optional) or where appropriate the alternative syntax for control structures may be used. -->
 	<rule ref="Squiz.ControlStructures.ControlSignature"/>
 	<rule ref="Generic.ControlStructures.InlineControlStructure"/>
 
 	<!-- A unique prefix must be used for all function names, classes, hooks, public/global variables, action/filter hooks, custom image sizes, constants, database entries, theme-specific scripts and theme-specific styles to avoid conflicts with plugins and other themes. -->
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
-
-	<!-- Use WP DB API instead of direct MySQL calls. -->
-	<rule ref="WordPress.DB.PreparedSQLPlaceholders"/>
-	<rule ref="WordPress.DB.PreparedSQL"/>
-	<rule ref="WordPress.DB.RestrictedFunctions"/>
-	<rule ref="WordPress.DB.RestrictedClasses"/>
 
 	<!-- Rule: The goto statement must never be used. -->
 	<rule ref="Generic.PHP.DiscourageGoto">
@@ -48,10 +52,9 @@
 	<!-- The "@" operator must not be used to suppress error messages or notices. -->
 	<rule ref="WordPress.PHP.NoSilencedErrors"/>
 
-	<!-- All theme text strings must be internationalized and properly escaped so that the theme can be translated and localized without parent theme modifications. -->
-	<rule ref="WordPress.WP.I18n"/>
-
-	<!-- A few rules not mentioned in the official documentation. -->
+	<!--
+		A few rules not mentioned in the official documentation.
+	-->
 	<rule ref="Generic.Files.ByteOrderMark"/>
 	<rule ref="WordPress.PHP.POSIXFunctions"/>
 
