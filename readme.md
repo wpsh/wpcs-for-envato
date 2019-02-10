@@ -3,6 +3,11 @@
 Automatically check for Envato [WordPress plugin](https://help.author.envato.com/hc/en-us/articles/360000481223-WordPress-Theme-Plugin-Requirements) and [theme coding requirements](https://help.author.envato.com/hc/en-us/articles/360000479946-WordPress-Theme-Coding-Requirements).
 
 
+## Requirements
+
+- [Composer](https://getcomposer.org)
+
+
 ## Setup
 
 Add these coding stanandards as a [Composer development dependency](https://packagist.org/packages/wpsh/wpcs-for-envato) to your project:
