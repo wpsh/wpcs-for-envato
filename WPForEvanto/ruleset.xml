@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="WordPress for Envato" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+<ruleset name="WordPress for Envato">
 
 	<description>Suggested WordPress coding standards for WordPress themes and plugns sold on Envato</description>
 
