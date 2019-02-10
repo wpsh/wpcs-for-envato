@@ -21,8 +21,8 @@ Automatically check for Envato [WordPress plugin](https://help.author.envato.com
 	```json
 	{
 		"scripts": {
-			"cs": "vendor/bin/phpcs --standard=WPCSForEnvato --extensions=php",
-			"csfix": "vendor/bin/phpcbf --standard=WPCSForEnvato --extensions=php"
+			"phpcs": "vendor/bin/phpcs --standard=WPCSForEnvato --extensions=php",
+			"phpcs-fix": "vendor/bin/phpcbf --standard=WPCSForEnvato --extensions=php"
 		}
 	}
 	```
