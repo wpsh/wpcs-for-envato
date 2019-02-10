@@ -5,7 +5,7 @@ Automatically check for Envato [WordPress plugin](https://help.author.envato.com
 
 ## Setup
 
-Add these coding stanandards as a Composer development dependency to your project:
+Add these coding stanandards as a [Composer development dependency](https://packagist.org/packages/wpsh/wpcs-for-envato) to your project:
 
 ```bash
 composer require --dev wpsh/wpcs-for-envato
