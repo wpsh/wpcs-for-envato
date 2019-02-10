@@ -31,7 +31,7 @@ Add `phpcs.xml.dist` to your project root that provides additional configuration
 
 ```xml
 <?xml version="1.0"?>
-<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="PHP_CodeSniffer" xsi:noNamespaceSchemaLocation="phpcs.xsd">
+<ruleset name="WordPress coding standards for Envato">
 	<rule ref="WPForEnvato"/>
 
 	<!-- Specify a prefix that should be used for all global functions and variables. -->
