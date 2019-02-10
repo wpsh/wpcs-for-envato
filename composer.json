@@ -1,0 +1,15 @@
+{
+  "name": "wpsh/wpcs-for-envato",
+  "description": "WordPress coding standards for Envato plugins and themes",
+  "type": "phpcodesniffer-standard",
+  "authors": [{
+    "name": "Kaspars Dambis",
+    "email": "hi@kaspars.net"
+  }],
+  "require": {
+    "wp-coding-standards/wpcs": "^2.0"
+  },
+  "suggest": {
+		"dealerdirect/phpcodesniffer-composer-installer": "A Composer plugin for automatically configuring the coding standards."
+	}
+}

@@ -1,0 +1,51 @@
+# PHP Coding Standard for WordPress Plugins and Themes on Envato Market
+
+Automatically check for Envato [WordPress plugin](https://help.author.envato.com/hc/en-us/articles/360000481223-WordPress-Theme-Plugin-Requirements) and [theme coding requirements](https://help.author.envato.com/hc/en-us/articles/360000479946-WordPress-Theme-Coding-Requirements).
+
+
+## Setup
+
+Add these coding stanandards as a Composer development dependency to your project:
+
+```bash
+composer require --dev wpsh/wpcs-for-envato
+```
+
+Define a script in `composer.json` to run the checks:
+
+```json
+{
+	"scripts": {
+		"cs": "vendor/bin/phpcs --standard=WPCSForEnvato --extensions=php",
+		"csfix": "vendor/bin/phpcbf --standard=WPCSForEnvato --extensions=php"
+	}
+}
+```
+
+Use `composer cs` to run the coding standard checks and `composer csfix` to automatically fix some of the coding standard violations.
+
+
+## Configuration
+
+Add `phpcs.xml.dist` to your project root that provides additional configuration options:
+
+```xml
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="PHP_CodeSniffer" xsi:noNamespaceSchemaLocation="phpcs.xsd">
+	<rule ref="WPForEnvato"/>
+
+	<!-- Specify a prefix that should be used for all global functions and variables. -->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="our_custom_prefix"/>
+				<element value="tgmpa"/>
+			</property>
+		</properties>
+	</rule>
+</ruleset>
+```
+
+## Credits
+
+Created by [Kaspars Dambis](https://kaspars.net).
