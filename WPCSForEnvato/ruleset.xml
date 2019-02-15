@@ -56,6 +56,8 @@
 		A few rules not mentioned in the official documentation.
 	-->
 	<rule ref="Generic.Files.ByteOrderMark"/>
+
+	<!-- Using the POSIX Regex functions ereg_* aren’t allowed. -->
 	<rule ref="WordPress.PHP.POSIXFunctions"/>
 
 </ruleset>
