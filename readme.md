@@ -10,7 +10,7 @@ Automatically check for Envato [WordPress plugin](https://help.author.envato.com
 
 ## Setup
 
-1. Add these coding stanandards as a [Composer development dependency](https://packagist.org/packages/wpsh/wpcs-for-envato) to your project:
+1. Add these coding standards as a [Composer development dependency](https://packagist.org/packages/wpsh/wpcs-for-envato) to your project:
 
 	```bash
 	composer require --dev wpsh/wpcs-for-envato
