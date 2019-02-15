@@ -32,7 +32,7 @@
 	<rule ref="Generic.ControlStructures.InlineControlStructure"/>
 
 	<!-- A unique prefix must be used for all function names, classes, hooks, public/global variables, action/filter hooks, custom image sizes, constants, database entries, theme-specific scripts and theme-specific styles to avoid conflicts with plugins and other themes. -->
-	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals"/>
 
 	<!-- Rule: The goto statement must never be used. -->
 	<rule ref="Generic.PHP.DiscourageGoto">
