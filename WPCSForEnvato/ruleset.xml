@@ -52,12 +52,12 @@
 	<!-- The "@" operator must not be used to suppress error messages or notices. -->
 	<rule ref="WordPress.PHP.NoSilencedErrors"/>
 
+	<!-- Using the POSIX Regex functions ereg_* aren’t allowed. -->
+	<rule ref="WordPress.PHP.POSIXFunctions"/>
+
 	<!--
 		A few rules not mentioned in the official documentation.
 	-->
 	<rule ref="Generic.Files.ByteOrderMark"/>
-
-	<!-- Using the POSIX Regex functions ereg_* aren’t allowed. -->
-	<rule ref="WordPress.PHP.POSIXFunctions"/>
 
 </ruleset>
