@@ -37,7 +37,7 @@ Add `phpcs.xml.dist` to your project root that provides additional configuration
 ```xml
 <?xml version="1.0"?>
 <ruleset name="WordPress coding standards for Envato">
-	<rule ref="WPForEnvato"/>
+	<rule ref="WPCSForEnvato"/>
 
 	<!-- Specify a prefix that should be used for all global functions and variables. -->
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
