@@ -29,7 +29,7 @@ Automatically check for Envato [WordPress plugin](https://help.author.envato.com
 	}
 	```
 
-	Use `composer cs` to run the coding standard checks and `composer csfix` to automatically fix some of the coding standard violations.
+	Use `composer phpcs` to run the coding standard checks and `composer phpcs-fix` to automatically fix some of the coding standard violations.
 
 
 ## Configuration
