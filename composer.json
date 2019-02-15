@@ -12,5 +12,13 @@
   },
   "suggest": {
     "dealerdirect/phpcodesniffer-composer-installer": "A Composer plugin for automatically configuring the coding standards."
+  },
+  "require-dev": {
+    "sclable/xml-lint": "^0.2.4"
+  },
+  "scripts": {
+    "lint": [
+      "./vendor/bin/xmllint --skip-xsd --exclude=vendor ."
+    ]
   }
 }
