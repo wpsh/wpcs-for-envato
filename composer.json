@@ -11,6 +11,6 @@
     "wp-coding-standards/wpcs": "^2.0"
   },
   "suggest": {
-		"dealerdirect/phpcodesniffer-composer-installer": "A Composer plugin for automatically configuring the coding standards."
-	}
+    "dealerdirect/phpcodesniffer-composer-installer": "A Composer plugin for automatically configuring the coding standards."
+  }
 }
