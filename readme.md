@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/wpsh/wpcs-for-envato.svg?branch=master)](https://travis-ci.com/wpsh/wpcs-for-envato)
 
-Automatically check for Envato [WordPress plugin](https://help.author.envato.com/hc/en-us/articles/360000481223-WordPress-Theme-Plugin-Requirements) and [theme coding requirements](https://help.author.envato.com/hc/en-us/articles/360000479946-WordPress-Theme-Coding-Requirements).
+Automatically check for Envato [WordPress plugin](https://help.author.envato.com/hc/en-us/articles/360000481223-WordPress-Theme-Plugin-Requirements) and [theme coding requirements](https://help.author.envato.com/hc/en-us/articles/360000479946-WordPress-Theme-Coding-Requirements). Based on the official [WordPress coding standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards) but more relaxed.
 
 
 ## Requirements
